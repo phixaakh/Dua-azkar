@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <!-- Optimized for iOS Safari: sets scale and prevents auto-zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- iOS Web App specific settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>ޕީ.ޑީ.އެފް ލިޔުންތައް</title>
+    
+    <style>
+        /* Import SanguSuruhee 2.0 WOFF font from GitHub */
+        @font-face {
+            font-family: 'SanguSuruhee';
+            /* REPLACE WITH YOUR ACTUAL GITHUB RAW URL */
+            src: url('https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/SanguSuruhee-2.0.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Reset & Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent; /* Removes default grey tap box on iOS */
+        }
+
+        body {
+            font-family: 'SanguSuruhee', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f2f2f7;
+            color: #1c1c1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            direction: rtl; /* Right-to-Left alignment for Thaana */
+            text-align: right;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 400px;
+            background: #ffffff;
+            padding: 28px 24px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #000000;
+            line-height: 1.5;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: #6c6c70;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        /* Mobile-optimized touch buttons for iPhone */
+        .pdf-button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #007aff; /* iOS Standard Blue */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 14px;
+            font-size: 1.15rem;
+            line-height: 1.4;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+        }
+
+        /* Active touch feedback for iOS */
+        .pdf-button:active {
+            background-color: #0056b3;
+            transform: scale(0.98);
+        }
+
+        .pdf-button span {
+            flex-grow: 1;
+        }
+
+        .icon {
+            margin-left: 12px;
+            font-style: normal;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <!-- Main Dhivehi Heading -->
+        <h1>ޕީ.ޑީ.އެފް ލިޔުންތައް</h1>
+        <p>ތިރީގައިވާ ލިންކުތަކުން ފައިލު ހުޅުވާލައްވާ:</p>
+
+        <div class="link-group">
+            <!-- Link 1 -->
+            <a href="document1.pdf" class="pdf-button" target="_blank" rel="noopener">
+                <i class="icon">📄</i>
+                <span>ފުރަތަމަ ޕީ.ޑީ.އެފް ފައިލު ހުޅުވާލައްވާ</span>
+            </a>
+
+            <!-- Link 2 -->
+            <a href="document2.pdf" class="pdf-button" target="_blank" rel="noopener">
+                <i class="icon">📄</i>
+                <span>ދެވަނަ ޕީ.ޑީ.އެފް ފައިލު ހުޅުވާލައްވާ</span>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
